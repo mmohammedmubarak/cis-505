@@ -1,0 +1,12 @@
+## VS Code IDE
+.vscode
+.code-workspace
+## General
+*.class
+*.jar
+*.workspace*.log
+/target/
+hs_err_pid*
+.project
+.classpath
+.impl
