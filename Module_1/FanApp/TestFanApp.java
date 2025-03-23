@@ -1,3 +1,7 @@
+/**
+ * Mohammed A. (2025). CIS 505 Intermediate Java Programming. Bellevue University, all rights reserved.
+ */
+
 package Module_1.FanApp;
 
 public class TestFanApp {

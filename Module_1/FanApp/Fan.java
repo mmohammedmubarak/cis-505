@@ -1,26 +1,30 @@
+/**
+ * Mohammed A. (2025). CIS 505 Intermediate Java Programming. Bellevue University, all rights reserved.
+ */
 package Module_1.FanApp;
 
 public class Fan {
 
     /**
      * Constants to capture the four speeds of the fan
-     */   
+     */
     final static int STOPPED = 0;
     final static int SLOW = 1;
     final static int MEDIUM = 2;
     final static int FAST = 3;
 
-     /**
+    /**
      * Data fields to specify the speed, status, radius and color of the fan
-     * Default values are assigned using the default No Argument  constructor
-     */      
+     * Default values are assigned using the default No Argument constructor
+     */
     private int speed;
     private boolean fanStatus;
     private double radius;
     private String color;
 
     /**
-     * No Argument Constructor for Fan class to initialize default values to the object
+     * No Argument Constructor for Fan class to initialize default values to the
+     * object
      */
     public Fan() {
         this.speed = Fan.STOPPED;
@@ -41,8 +45,8 @@ public class Fan {
     }
 
     /**
-     * Overridden the toString method to display color, radius of the fan and speed
-     * (when it is turned on)
+     * Overridden the toString method to display color, radius of the fan 
+     * and speed (when it is turned on)
      */
     @Override
     public String toString() {
