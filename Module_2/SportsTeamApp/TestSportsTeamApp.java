@@ -10,12 +10,12 @@ public class TestSportsTeamApp {
 
     public static void main(String[] args) {
         printIndentedWithTwoSpaces("Welcome to the Sports Team App\n");
+        Scanner scanner = new Scanner(System.in);
         String continueWithAnotherTeam = "y";
         while (continueWithAnotherTeam.equals("y")) { // while loop to continue adding more teams until the user does
                                                       // not input 'y'
             System.out.print("\n");
             String teamName = "";
-            Scanner scanner = new Scanner(System.in);
             while (teamName.trim().equals("")) { // while loop to continue asking the user to enter a name for the team
                 printIndentedWithTwoSpaces("Enter a team name: ");
                 teamName = scanner.nextLine();
@@ -55,6 +55,7 @@ public class TestSportsTeamApp {
             continueWithAnotherTeam = scanner.nextLine();
         }
         System.out.println("\n");
+        scanner.close();
         printIndentedWithTwoSpaces("End of line...");
     } // end main
 
